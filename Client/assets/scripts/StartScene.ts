@@ -5,6 +5,6 @@ const { ccclass, property } = _decorator;
 @ccclass('StartScene')
 export class StartScene extends Component {
     start() {
-
+        
     }
 }
