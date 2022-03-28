@@ -6,7 +6,6 @@
     "version": "3.4.2"
   },
   "dependencies": {
-    "tsrpc-browser": "^3.2.3",
-    "tsrpc-miniapp": "^3.2.2"
+    "tsrpc-browser": "^3.2.3"
   }
 }
