@@ -1,0 +1,12 @@
+{
+  "name": "Client",
+  "uuid": "65a71a08-268e-49ae-a999-fb3cedda06b3",
+  "version": "3.4.2",
+  "creator": {
+    "version": "3.4.2"
+  },
+  "dependencies": {
+    "tsrpc-browser": "^3.2.3",
+    "tsrpc-miniapp": "^3.2.2"
+  }
+}
