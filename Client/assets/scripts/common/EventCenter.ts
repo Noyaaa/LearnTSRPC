@@ -49,7 +49,6 @@ export default class EventCenter {
         continue
       }
       if (bin.listener == listener && bin.thisObj == thisObj) {
-        // list.splice(i, 1)
         list[i] = null
         break
       }

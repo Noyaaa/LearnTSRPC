@@ -1,5 +1,6 @@
 import EventCenter from "./common/EventCenter";
 import Loader from "./common/Loader";
+import Logger from "./common/Logger";
 import WebSocket from "./common/WebSocket";
 
 // 版本信息
@@ -18,6 +19,9 @@ class App {
     /** 事件监听 */
     public eventCenter: EventCenter = null;
 
+    /** 日志输出 */
+    public logger: Logger = null;
+
     /** 网络链接对象 */
     public webSocket: WebSocket = null;
 
@@ -26,6 +30,7 @@ class App {
         this.versionInfo = versionInfo;
         this.loader = new Loader();
         this.eventCenter = new EventCenter();
+        this.logger = new Logger();
         this.webSocket = new WebSocket();
     }
 }

@@ -22,8 +22,8 @@ export class StartScene extends Component {
         await this._loadGameScene();
         // 游戏游戏场景
         await this._enterGameScene();
-
-        console.log("=============>> enter gamescene success!");
+        
+        app.logger.debug("enter gamescene success!");
     }
 
     /**
