@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "StartScene",
+    "_name": "game",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -29,9 +29,9 @@
     "_prefab": null,
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 9
+      "__id__": 8
     },
-    "_id": "db31ca9b-c038-4fde-af2e-2a12ae4c1b4a"
+    "_id": "b96009cc-770a-4c22-8342-e33a64c86be1"
   },
   {
     "__type__": "cc.Node",
@@ -202,11 +202,7 @@
     },
     "_children": [],
     "_active": true,
-    "_components": [
-      {
-        "__id__": 8
-      }
-    ],
+    "_components": [],
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -234,35 +230,24 @@
       "y": 0,
       "z": 0
     },
-    "_id": "33KGdPb+9LlKtxiihMLfal"
-  },
-  {
-    "__type__": "dc602QKTLBOCpNFJll0GhaJ",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 7
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "_id": "0cJ+KhXYVFBpCYhXthjJ3m"
+    "_id": "17q7y8r6RI9YvTwxsX1CIb"
   },
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 10
+      "__id__": 9
     },
     "shadows": {
-      "__id__": 11
+      "__id__": 10
     },
     "_skybox": {
-      "__id__": 12
+      "__id__": 11
     },
     "fog": {
-      "__id__": 13
+      "__id__": 12
     },
     "octree": {
-      "__id__": 14
+      "__id__": 13
     }
   },
   {
