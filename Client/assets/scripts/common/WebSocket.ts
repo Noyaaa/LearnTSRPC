@@ -27,21 +27,20 @@ export default class WebSocket {
         this._ip = ip;
         this._port = port;
         this._isSSL = isSSL;
+        this._wsClient = new WsClient(serviceProto, {
+            server: `${this._isSSL ? 'wss' : 'ws'}://${this._ip}:${this._port}`,
+            json: true
+        })
         this._isInited = true;
     }
 
     /** 链接 */
     public async connect(): Promise<{ isSucc: boolean, errMsg: string }> {
-        this._wsClient = new WsClient(serviceProto, {
-            server: `${this._isSSL ? 'ws' : 'wss'}://${this._ip}:${this._port}`,
-            json: true
-        })
         return new Promise((resolve, reject) => {
             this._wsClient.connect().then((res: { isSucc: boolean, errMsg: string }) => {
                 if (res.isSucc) {
                     return resolve(res);
                 }
-                console.log("================> 链接失败:", res.errMsg);
                 return resolve(res);
             });
         });
